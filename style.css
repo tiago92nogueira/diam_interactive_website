@@ -1,0 +1,74 @@
+/* HEADER - foto alusiva ao evento como fundo */
+header {
+  background-image: url('images/headermusica.jpg');
+  background-size: auto;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-shadow: 1px 1px 3px black;
+  display: flex;        
+  align-items: center;  
+  gap: 15px;
+}
+
+/* NAV - links com aspeto de botões com hover */
+nav {
+  background-color: #333;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  background-color: #e74c3c;
+  padding: 8px 14px;
+  margin-right: 5px;
+}
+
+nav a:hover {
+  background-color: #c0392b;
+}
+
+/* CONTEÚDO */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+article {
+  padding: 20px;
+}
+
+/* LAYOUT EM COLUNAS - notícias e agenda lado a lado */
+.duas-colunas {
+  display: flex;
+  gap: 20px;
+}
+
+.duas-colunas section {
+  flex: 1;
+}
+
+/* TABELA */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+th {
+  background-color: #333;
+  color: white;
+}
+
+/* FOOTER */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}

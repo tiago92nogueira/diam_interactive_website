@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <title>FestMusic 2026 - Candidatura a Voluntário</title>
+</head>
+<body>
+
+  <!-- HEADER-->
+  <header>
+    <a href="index.html">
+      <img src="images/logo.jpeg" alt="Logo FestMusic - Voltar à homepage" width="150" height="60" />
+    </a>
+    <h1>FestMusic 2026</h1>
+  </header>
+
+  
+  <nav>
+    <a href="index.html">Página Principal</a> |
+    <a href="form.html">Candidatura a Voluntário</a>
+  </nav>
+
+  <!-- ARTICLE: conteúdo principal -->
+  <article>
+    <section>
+      <h2>Formulário de Candidatura a Voluntário</h2>
+      <p>Preenche o formulário abaixo para te candidatares a voluntário no FestMusic 2026.</p>
+
+      
+      <form action="confirmation.html" method="get">
+
+        <!-- Nome -->
+        <label for="nome">Nome completo:</label><br />
+        <input type="text" id="nome" name="nome" required /><br /><br />
+
+        <!-- Email -->
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <!-- Telemóvel -->
+        <label for="telemovel">Telemóvel:</label><br />
+        <input type="tel" id="telemovel" name="telemovel" /><br /><br />
+
+        <!-- Disponibilidade de dias - CHECKBOXES -->
+        <fieldset>
+          <legend>Dias disponíveis:</legend>
+          <input type="checkbox" id="dia13" name="dias" value="13jun" />
+          <label for="dia13">13 de Junho</label><br />
+          <input type="checkbox" id="dia14" name="dias" value="14jun" />
+          <label for="dia14">14 de Junho</label>
+        </fieldset><br />
+
+        <!-- Disponibilidade de horário - RADIO BUTTONS -->
+        <fieldset>
+          <legend>Horário preferido:</legend>
+          <input type="radio" id="manha" name="horario" value="manha" />
+          <label for="manha">Manhã (9h - 13h)</label><br />
+          <input type="radio" id="tarde" name="horario" value="tarde" />
+          <label for="tarde">Tarde (13h - 18h)</label><br />
+          <input type="radio" id="noite" name="horario" value="noite" />
+          <label for="noite">Noite (18h - 23h)</label>
+        </fieldset><br />
+
+        <!-- Tarefas - DATALIST -->
+        <label for="tarefa">Tarefa preferida:</label><br />
+        <input type="text" id="tarefa" name="tarefa" list="lista-tarefas" /><br />
+        <datalist id="lista-tarefas">
+          <option value="Instalação de palcos e equipamentos" />
+          <option value="Acompanhamento de VIPs" />
+          <option value="Informações aos participantes" />
+          <option value="Controlo de acessos" />
+          <option value="Apoio à organização" />
+        </datalist><br />
+
+        <!-- Botão de submissão -->
+        <input type="submit" value="Submeter Candidatura" />
+
+      </form>
+    </section>
+  </article>
+
+  
+  <footer>
+   
+  </footer>
+
+</body>
+</html>

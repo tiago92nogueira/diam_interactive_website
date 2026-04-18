@@ -21,6 +21,7 @@
   <nav>
     <a href="index.html">Página Principal</a> |
     <a href="form.html">Candidatura a Voluntário</a>
+    <a href="tickets.html">Compra de Bilhetes</a>
   </nav>
 
   <!-- ARTICLE: conteúdo principal -->
@@ -75,8 +76,12 @@
           <option value="Apoio à organização" />
         </datalist><br />
 
-        <!-- Botão de submissão -->
-        <input type="submit" value="Submeter Candidatura" />
+        <!-- Comentário com verificação de palavras obscenas em tempo real -->
+        <label for="comentario">Comentário sobre o evento:</label><br />
+        <textarea id="comentario" name="comentario" rows="4" cols="50" oninput="verificar()"></textarea><br />
+        <p id="aviso" style="color: red;"></p><br />
+
+        <input type="submit" id="btnSubmeter" value="Submeter Candidatura" />
 
       </form>
     </section>
@@ -86,6 +91,8 @@
   <footer>
    
   </footer>
+
+ <script src="script.js"></script>
 
 </body>
 </html>

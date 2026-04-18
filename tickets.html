@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <title>FestMusic 2026 - Compra de Bilhetes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <a href="index.html">
+      <img src="images/logo.jpeg" alt="Logo FestMusic" width="150" height="60" />
+    </a>
+    <h1>FestMusic 2026</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Página Principal</a>
+    <a href="form.html">Candidatura a Voluntário</a>
+    <a href="tickets.html">Compra de Bilhetes</a>
+  </nav>
+
+  <article>
+    <section>
+      <h2>Compra de Bilhetes</h2>
+
+      <!-- Bilhete 1 -->
+      <p>
+        Bilhete de um dia - 40€
+        <button onclick="alterar('qty1', -1)">-</button>
+        <span id="qty1">0</span>
+        <button onclick="alterar('qty1', 1)">+</button>
+      </p>
+
+      <!-- Bilhete 2 -->
+      <p>
+        Passe para o evento - 80€
+        <button onclick="alterar('qty2', -1)">-</button>
+        <span id="qty2">0</span>
+        <button onclick="alterar('qty2', 1)">+</button>
+      </p>
+
+      <!-- Bilhete 3 -->
+      <p>
+        Passe Premium - 100€
+        <button onclick="alterar('qty3', -1)">-</button>
+        <span id="qty3">0</span>
+        <button onclick="alterar('qty3', 1)">+</button>
+      </p>
+
+      <!-- Total e botão comprar -->
+      <p><strong>Total: <span id="total">0</span>€</strong></p>
+
+      <button onclick="comprar()">Comprar</button>
+
+      <p id="mensagem"></p>
+
+    </section>
+  </article>
+
+  <footer>
+   
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
